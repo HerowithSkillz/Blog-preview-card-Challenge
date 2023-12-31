@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](Cardwithouthover1.jpg)
-![](Cardwithhover2.jpg)
+![](./Cardwithouthover1.png)
+![](./Cardwithhover2.png)
 
 
 
