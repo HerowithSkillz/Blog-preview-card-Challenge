@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Figtree', sans-serif;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+:root {
+    --primary-yellow: hsl(47, 88%, 63%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 50%);
+    --neutral-black:hsl(0, 0%, 7%);
+    --fs-normal: 0.725rem;
+    --card-width: 20rem;
+    --card-height:29rem;
+    
+}
+body{
+   background-color: var(--primary-yellow);
+}
+/* Notes
+- we gotta give padding to the main card and adjust the width of the card accordingly 
+-There are inconsistency in the spacing of the elements so we gotta work it out.
+*/
+
+.card{
+    --card-radius: 1rem;
+    background-color: var(--neutral-white);
+    width:var(--card-width);
+    height: var(--card-height);
+    border: 0.125rem solid black;
+    margin: auto;
+    margin-block: 4rem;
+    border-radius: var(--card-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    box-shadow: 0.425rem 0.425rem;
+}
+.card > :first-child{
+    border-radius: var(--card-radius);
+    width: 18rem;
+    margin-top: 1rem;
+}
+.box{
+    margin: 1rem;
+    margin-top: 0.5rem;
+    font-size: var(--fs-normal);
+}
+#yellow-highlight{
+    background-color: var(--primary-yellow);
+    display: inline-block;
+    padding: 0.425rem 0.525rem;
+    border-radius: 0.325rem;
+    font-weight: 900;
+    margin-bottom: 0rem;
+}
+.box > * {
+    margin: 0.725rem 0rem;
+}
+.box :nth-child(2){
+    font-weight: 600;
+}
+h2{
+    padding-top: 0.125rem;
+    font-size: 19px;
+    font-weight: 800;
+}
+h2:hover{
+    color: var(--primary-yellow);
+    cursor: pointer;
+}
+#para{
+    padding: 5px 0px;
+    font-size: 14px;
+    line-height: 23px;
+    color: var(--neutral-grey);
+
+}
+#profile{
+    width: 2rem;
+    display: inline;
+}
+.align{
+    display: flex;
+    align-items: center;
+    gap: 0.525rem;
+}
+.align > :last-child{
+    color: var(--neutral-black);
+    font-weight: 800;
+}
